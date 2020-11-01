@@ -39,10 +39,11 @@ let data = [
 currentPhoto=0;
 let imagesData = [data1,data2,data3,data4,data5,data6,data7];
 
-let loadPhoto = (currentPhoto) => {
-    $('#photo').attr('src',imagesData[currentPhoto].photo);
+let loadPhoto = (photoNumber) => {
+    $('#photo').attr('src', imagesData[photoNumber].photo);
+    // ...
   }
-  
+  loadPhoto(currentPhoto);
   $('#previous').click(() => {
     if(currentPhoto > 1) {
         currentPhoto--;  
@@ -57,4 +58,3 @@ let loadPhoto = (currentPhoto) => {
       loadPhoto(currentPhoto);
     });
 
-loadPhoto(currentPhoto);
