@@ -36,4 +36,24 @@ let data = [
     },
 ]
 
-$('img').attr('src', data.photo);
+currentPhoto=0;
+
+let loadPhoto = (currentPhoto) => {
+    $('#photo').attr('src',data[currentPhoto].photo);
+  }
+  
+  $('#previous').click(() => {
+    if(currentPhoto > 1) {
+        currentPhoto--;  
+      }
+      loadPhoto(currentPhoto);
+    });
+
+  $('#next').click(() => {
+    if(currentPhoto < 6) {
+        currentPhoto++;  
+      }
+      loadPhoto(currentPhoto);
+    });
+
+loadPhoto(currentPhoto);
