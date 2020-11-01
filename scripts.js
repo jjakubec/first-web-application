@@ -36,7 +36,7 @@ let data = [
     },
 ]
 
-currentPhoto=0;
+let currentPhoto=0;
 let imagesData = [data1,data2,data3,data4,data5,data6,data7];
 
 let loadPhoto = (photoNumber) => {
