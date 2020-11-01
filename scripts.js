@@ -37,9 +37,10 @@ let data = [
 ]
 
 currentPhoto=0;
+let imagesData = [data1,data2,data3,data4,data5,data6,data7];
 
 let loadPhoto = (currentPhoto) => {
-    $('#photo').attr('src',data[currentPhoto].photo);
+    $('#photo').attr('src',imagesData[currentPhoto].photo);
   }
   
   $('#previous').click(() => {
