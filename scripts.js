@@ -37,7 +37,7 @@ let data = [
 ]
 
 let currentPhoto=0;
-let imagesData = [data1,data2,data3,data4,data5,data6,data7];
+let imagesData = [data[0],data[1],data[2],data[3],data[4],data[5],data[6]];
 
 let loadPhoto = (photoNumber) => {
     $('#photo').attr('src', imagesData[photoNumber].photo);
