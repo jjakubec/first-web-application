@@ -45,7 +45,7 @@ let loadPhoto = (photoNumber) => {
   }
   loadPhoto(currentPhoto);
   $('#previous').click(() => {
-    if(currentPhoto > 1) {
+    if(currentPhoto > 0) {
         currentPhoto--;  
       }
       loadPhoto(currentPhoto);
